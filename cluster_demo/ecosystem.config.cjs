@@ -7,10 +7,10 @@ module.exports = {
       instances: 0,
       exec_mode: 'cluster',
     },
-    {
-      script: './service-worker/',
-      watch: ['./service-worker'],
-    },
+    // {
+    //   script: './service-worker/',
+    //   watch: ['./service-worker'],
+    // },
   ],
   deploy: {
     production: {
