@@ -1,13 +1,11 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const { spawn } = require('child_process');
 
-const child = spawn('node', [
-  '/Users/anuragtiwari/learning/loan-enquiry/learning/child/print-name.js',
-]);
+const child = spawn('node', ['print-name.js']);
 
 child.on('exit', function (code, signal) {
   console.log(
-    'child process exited with ' + `code ${code} and signal ${signal}`,
+    'child process exited with ' + `code ${code} and signal ${signal} and process id is - ${process.pid}`,
   );
 });
 

@@ -26,4 +26,6 @@ for (let i = 0; i < 50; i++) {
   run().catch((error) => console.log(error));
 }
 
+console.log(`parent process id - ${process.pid}`)
+
 setTimeout(() => console.log('End Program'), 2000);
