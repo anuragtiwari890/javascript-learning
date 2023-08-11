@@ -38,7 +38,7 @@
 // Nested Arrow
 
 // function level1() {
-//     this.l1 = '2';
+//     this.l1 = '1';
 //     (function level() {
 //         this.l2 = '2';
 //         (() => {

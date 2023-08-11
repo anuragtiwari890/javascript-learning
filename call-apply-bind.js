@@ -3,7 +3,7 @@ var person = {
   firstName: this.name,
   marks: function(math, english) {
     console.log(
-      `${this.firstName} has scored math - ${math} and english - ${english}`,
+      `${this.name} has scored math - ${math} and english - ${english}`,
     );
   },
 };
@@ -32,12 +32,12 @@ person.marks.apply({ name: 'kim Smith' }, [90, 70]);
  */
 var helloFunc = person.marks.bind({ name: 'Jim Smith' });
 helloFunc(90, 70);
-// output: Jim Smith says hello world"
+// output: Jim Smith has scored math - 90 and english - 70
 
 // bind example 2
 var helloFunc2 = person.marks.bind({ name: 'kim Smith' }, 90, 70);
 helloFunc2();
-// output: Jim Smith says hello world"
+// output: kim Smith has scored math - 90 and english - 70
 
 // another example of apply
 function personContainer() {
@@ -52,4 +52,4 @@ function personContainer() {
   person.hello.apply(person, arguments);
 }
 personContainer(90, 70);
-// output: "James Smith has scored math - 90 and english - 70", note: arguments[0] = 90 , arguments[1] = 70
+// // output: "James Smith has scored math - 90 and english - 70", note: arguments[0] = 90 , arguments[1] = 70

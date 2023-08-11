@@ -7,6 +7,8 @@ It is written in C++ and is responsible for executing JavaScript code in the Nod
 V8 is highly optimized and known for its fast and efficient execution of JavaScript code.
 It compiles JavaScript code to machine code, making it run faster than traditional interpreters.
 V8 is used not only in Node.js but also in Google Chrome and other projects that require JavaScript execution.
+
+
 Event Loop:
 
 The event loop is a key concept in the Node.js runtime that enables handling asynchronous operations efficiently without blocking the program's execution.
@@ -14,6 +16,8 @@ Node.js uses an event-driven, non-blocking I/O model, which means it can handle 
 The event loop continuously checks for pending asynchronous tasks, such as file I/O, network requests, timers, and callbacks from completed operations.
 When a task is completed, its corresponding callback is placed in the event loop's task queue.
 The event loop picks up these callbacks from the task queue and executes them one by one, allowing the program to respond to asynchronous events as they occur.
+
+
 libuv:
 
 libuv (pronounced "lib-u-v") is a multi-platform C library that provides the event loop implementation and abstracts I/O operations and system-related functionalities.
